@@ -1,0 +1,217 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+.body-home{
+    background-image: url('images/background-02-port.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*------HEADER PAGE-------*/
+.header{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 65px;
+    left: 0px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header i{
+    float: left;
+    color: white;
+    padding: 17px 0px 0px 17px;
+}
+
+.header img{
+    width: 300px;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+/*--------------CONTACTS PAGE------------*/
+
+.body-contact{
+    background-image: url('images/background-01-port.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts{
+    padding-top: 90px;
+}
+
+/*-----TABLE LIST-----*/
+
+#table td img{
+    border-radius: 50%;
+    height: 100px;
+    width:  100px;   
+}
+
+#table td h5{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Niconne', cursive;
+    padding-left: 50px;
+    color: black;
+    text-shadow:    0px 0px 5px lightblue, 
+                    0px 0px 10px black, 
+                    0px 0px 10px lightblue, 
+                    0px 0px 20px lightblue;
+}
+
+/*--------------BUTTONS------------*/
+
+.btn{
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn::after {
+    content: "";
+    background-color: #1a1a1a;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+.btn:hover::after {
+    top: 0px;
+    left: 0px;
+}
+
+#avatar{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#avatar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#addContact{
+    float: right;
+}
+
+#homeLink{
+    float: left;
+    width: 33.33%;
+}
+
+#editContact{
+    margin: auto;
+    width: 33.33%;
+}
+
+#deleteContact{
+    float: right;
+    width: 33.33%;
+}
+
+/*--------------FORM------------*/
+
+#editForm{
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 300px;
+}
+
+label {
+    color: #B4886B;
+    font-weight: bold;
+    width: 130px;
+    float: left;
+}
+
+label:after { 
+    content: ": " 
+}
+
+
+/*---------RESPONSIVE LAYOUT-----------*/
+
+@media only screen and (min-width: 600px){
+    #contacts{
+        width: 80%;
+        margin: auto;
+    }
+    
+    #recipe{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    #contacts{
+        width: 80%;
+        margin: auto;
+    }
+    
+    #recipe{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #contacts{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    #contacts{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    .body-home{
+        background-image: url('images/background-02-port.jpg');
+    }
+}
